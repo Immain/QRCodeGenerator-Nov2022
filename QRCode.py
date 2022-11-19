@@ -16,6 +16,7 @@ wpercent = (basewidth / float(logo.size[0]))
 hsize = int((float(logo.size[1]) * float(wpercent)))
 logo = logo.resize((basewidth, hsize), Image.ANTIALIAS)
 QRcode = qrcode.QRCode(
+    border=2,
     error_correction=qrcode.constants.ERROR_CORRECT_H
 )
 
